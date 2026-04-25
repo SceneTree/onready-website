@@ -1,0 +1,226 @@
+---
+prefix: "/US"
+year: 2026
+city: Boston
+country: USA
+dates: July 20-22
+discord-invite: "https://discord.gg/h3UJw4jHfT"
+ticket_shop_link: "https://tickets.godotengine.org/foundation/godotcon-us-2026/"
+sold-out: false
+call-for-submissions: true
+location: 
+  name: "Microsoft NERD"
+  link: "https://www.microsoftnewengland.com/"
+  address: "1 Memorial Dr, Cambridge, MA 02142, United States"
+  venue-more-link: "https://www.archdaily.com/916492/microsoft-new-england-research-and-development-center-sasaki/5cd17bef284dd12d1e000711-microsoft-new-england-research-and-development-center-sasaki-photo?next_project=no"
+  google-maps: "https://www.google.com/maps/place/Microsoft+New+England+Research+and+Development+Center/@42.3608684,-71.0832216,1122m/data=!3m1!1e3!4m6!3m5!1s0x89e370a423d61825:0x58516248462c99eb!8m2!3d42.3614256!4d-71.0812092!16s%2Fg%2F1tfx5xkv?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+  open-street-map: "https://www.openstreetmap.org/?mlat=42.361570&mlon=-71.081100#map=17/42.360776/-71.082224"
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./main.css?1">
+    <title>GodotCon {{ page.city }}</title>
+    <link rel="icon" href="/images/2026/favicon.png?2" sizes="any">
+
+    <meta property="og:title" content="GodotCon {{ page.year }}">
+    <meta property="og:description" content="GodotCon {{ page.city }} {{ page.dates }}">
+    <meta property="og:image" content="/images/{{ page.year }}/share-image.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GodotCon {{ page.year }}">
+    <meta name="twitter:description" content="GodotCon {{ page.city }} {{ page.dates }}">
+    <meta name="twitter:image" content="/images/{{ page.year }}/share-image.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html {
+        scroll-padding-top: 70px;
+      }
+    </style>
+
+    <script src="sticky.js" defer></script>
+  </head>
+  <body>
+    {% include 2026/header.html dates=page.dates city=page.city country=page.country %}
+    {% include 2026/nav.html %}
+    <div class="px-8 overflow-x-clip container">
+      <!-- Home section -->
+      <section class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-16 items-center my-16 md:my-24">
+        <div class="flex-1 building-block bg-lightblueish">
+          <h2 class="text-2xl uppercase font-bold mb-3">What is GodotCon?</h2>
+          <p class="mb-8 max-w-[60ch] leading-[160%]">
+            GodotCon is an event which aims to give the Godot community a  place to meet in person and exchange knowledge. Whether it’s through  inspiring talks, networking, or showcasing games and projects, the event is all about building connections and exchanging knowledge. Organized  by the  <a href="https://godot.foundation/">Godot Foundation</a>, alongside <a href="https://scenetree.org">SceneTree</a> and an incredible team of volunteers, GodotCon US is a true reflection of the passion and collaboration that make this community so unique.
+          </p>
+          <a class="btn" href="{{page.discord-invite}}">Join us on Discord</a>
+        </div>
+        <div class="w-full md:w-[40%] h-auto aspect-[8/5] relative">
+          <img src="/assets/2026/images/talk.webp" class="object-cover absolute w-full h-full scale-80 transition-all hover:scale-100 hover:z-1 translate-[8%] rotate-2 rounded-lg"/>
+          <img src="/assets/2026/images/backstage.webp" class="object-cover absolute w-full h-full scale-80 transition-all hover:scale-100 hover:z-1 -translate-[8%] -rotate-8 rounded-lg"/>
+        </div>
+      </section>
+    </div>
+
+    <div class="mb-16">
+      <img style="margin: auto; height: 200px;" src="/images/2026/SketchesWithStars.png">
+    </div>
+  
+    <div class="px-4 mt-16 overflow-x-clip">
+    
+      <!-- Location Section -->
+      <section id="location" class="max-w-screen-xl mx-auto mb-16">
+        <h2 class="text-2xl uppercase font-bold mb-3">Location</h2>
+        <p class="block text-lg mb-4"><a href="{{page.location.link}}" class="font-bold underline">{{page.location.name}}</a> {{page.location.address}}</p>
+        <a class="block mb-4 underline" href="{{page.location.venue-more-link}}">+ More info on the venue</a>
+        <iframe class="w-full mb-6" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.09578013420106%2C42.35594348012361%2C-71.07135057449342%2C42.36560736728714&layer=mapnik&marker=42.361570%2C-71.081100"></iframe>
+        <div class="flex gap-4">
+          <a href="{{page.location.open-street-map}}" class="btn">OpenStreetMap</a>
+          <a href="{{page.location.google-maps}}" class="btn">Google Map</a>
+        </div>
+      </section>
+
+      <!-- Speakers section-->
+      <section id="speakers" class="max-w-screen-xl mx-auto mb-24">
+      {% if page.call-for-submissions %}
+        <div class="flex-1 half-width top">
+          <img style="height: 550px;" src="/images/2026/Lil_Guy_Totem_Render.png" />
+        </div>
+        <!-- Call for submissions -->
+        <div class="flex-1 building-block half-width bg-lightredish">
+          <h2 class="text-2xl uppercase font-bold mb-4">Call for Submissions</h2>
+          {% for entry in site.data['2026'].call_for_submissions %}
+            <div class="mb-4">
+              <h3 class="text-lg uppercase font-bold mb-2">{{entry.title}}</h3>
+              <p class="max-w-[70ch] leading-[160%]">{{entry.content}}</p>
+            </div>
+          {% endfor %}
+          <a class="btn" href="https://talks.godotengine.org/godotcon-us-2026/submit">Submit now!</a>
+          {% else %}
+          <!-- Speakers list -->
+          {% include 2026/speakers_list.html %}
+        {% endif %}
+        </div>
+      </section>
+
+    </div>
+    <div class="px-4 mt-16 overflow-x-clip">
+  
+      <!-- Tickets Section-->
+      <section id="tickets" class="max-w-screen-xl mx-auto">
+        <div class="building-block building-block-222 bg-lightblueish half-width bottom">
+          <h2 class="text-2xl uppercase font-bold mb-4">Buy tickets</h2>
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex-1">
+              <p class="mb-4 max-w-[70ch] leading-[160%]">
+                {% if page.sold-out == false %}
+                  Tickets now on sale. Grab one now before the conference is full!
+                {% else %}
+                  We have sold out so fast! Thank you to everyone who grabbed a ticket.
+                  If you did not get lucky this time, don't give up quite yet.
+                  Tickets will free up over time, so we enabled a waiting list in the ticket shop for you.
+                {% endif %}
+              </p>
+              <a class="btn" href="{{ page.ticket_shop_link }}">Ticket Shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="half-width bottom" style="height: 147px; overflow: show;">
+          <img style="height: 200px; position: absolute;" src="/images/2026/Lil_Guy_Sitting_Render.png" />
+        </div>
+      </section>
+
+      <!-- Volunteer section -->
+      <section id="volunteer" class="max-w-screen-xl mx-auto mb-16">
+        <div class="building-block building-block-222 bg-lightblueish half-width top">
+          <h2 class="text-2xl uppercase font-bold mb-4">Volunteer</h2>
+          <p class="max-w-[70ch] leading-[160%]">
+            Would you like to bring the next GodotCon to your town? GodotCon loves to travel to new cities. <a href="mailto:godotcon@godotengine.org">Write us an email</a> and introduce yourself, and tell us how you - or even better: your local user group - can support the event. We look forward to hearing from you!
+          </p>
+        </div>
+        <div class="building-block building-block-222 bg-lightyellowish half-width top">
+          <div class="flex-1">
+            <h3 class="text-lg uppercase font-bold mb-2">Not able to attend this year?</h3>
+            <p class="mb-4">Join our mailing list to get notified about future events.
+              Make sure to confirm your subscription (check the spam folder for our mails), 
+              or we cannot message you!
+            </p>
+            <form action="https://godot.news/subscription/form" class="flex flex-wrap gap-4">
+              <input class="input-text flex-1" type="email" name="email" placeholder="email">
+              <input class="btn" type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="mb-16">
+        <img style="margin: auto; height: 200px; transform: scaleX(-1);" src="/images/2026/SketchesWithStars.png">
+      </div>
+
+      <!-- FAQ section -->
+      <section id="faq" class="max-w-screen-xl mx-auto mb-16">
+        {% assign general_qa = site.data['2026'].faq['general'] %}
+        {% assign tickets_qa = site.data['2026'].faq['tickets'] %}
+        <h2 class="text-2xl uppercase font-bold bottom">FAQ</h2>
+        <div class="building-block bg-lightblueish">
+          <h3 class="uppercase opacity-40 font-bold mt-6 mb-2">General</h3>
+          {% include 2026/faq.html qa=general_qa %}
+        </div>
+        <div class="building-block bg-lightyellowish">
+          <h3 class="uppercase opacity-40 font-bold mt-6 mb-2">Tickets</h3>
+          {% include 2026/faq.html qa=tickets_qa %}
+        </div>
+      </section>
+
+      <!-- Sponsors section -->
+      <section class="max-w-screen-xl mx-auto mb-16">
+        <h2 class="text-2xl uppercase font-bold mb-8">Our sponsors</h2>
+        <style>
+          @media (min-width: 768px){
+            .platinum a.btn {
+              max-width: calc(50% - 8px);
+            }
+          }
+        </style>
+
+        {% assign sponsor_ranks = "platinum, gold, silver, bronze" | split: ", " %}
+
+        {% for sponsor_rank in sponsor_ranks %}
+          {% if site.data['2026'].sponsors[sponsor_rank] %}
+          <div class="mb-8">
+            <h3 class="text-xl font-bold mb-4" style="text-transform: capitalize;">{{sponsor_rank}}</h3>
+            <div class="sponsor-grid {{sponsor_rank}}">
+              {% for sponsor in site.data['2026'].sponsors[sponsor_rank] %}
+                <a class="btn" style="align-content: center;" target="_blank" href="{{ sponsor.link }}">
+                  <img class="object-contain" style="max-height: 140px; width: 100%;" src="{{sponsor.logo}}" alt="{{sponsor.name}}">
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+        <div>
+          <p>As a non-profit organization, we rely on the support of our sponsors to make events like GodotCon happen. </p>
+          <p>If you’re interested in supporting the Godot Engine, we encourage you to visit our <a href="https://fund.godotengine.org/">development fund</a>.</p>    
+        </div>
+      </section>
+
+    </div>
+
+    <div class="relative -z-10 lg:mt-24">
+      <img class="w-full h-[40vh] object-cover object-top
+      lg:absolute lg:bottom-20 lg:right-0 lg:w-auto lg:h-[80vh] lg:object-contain lg:object-center"
+      src="/images/2026/Lil_Guy_Pit_Crew_Renders.png" alt="">
+    </div>
+
+    <div class="sticky-container">
+      <div class="sticky-img scroll-and-grow"><img style="height: 300px;" src="/images/2026/star-rider-solo.png" /></div>
+    </div>
+    <div class="star-holder">
+    </div>
+
+    {% include 2026/footer.html %}
+  </body>
+</html>

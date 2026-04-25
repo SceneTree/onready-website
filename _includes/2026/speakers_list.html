@@ -1,0 +1,22 @@
+<h2 class="text-2xl uppercase font-bold mb-4">Speakers</h2>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 font-bold text-lg mb-8">
+    <div><span class="text-blueish">■</span> Community talk</div>
+    <div><span class="text-greenish">■</span> Workshop</div>
+    <div><span class="text-redish">■</span> Lightning Talk</div>
+    <div><span class="text-yellowish">■</span> Sponsored talk</div>
+</div>
+
+<div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+
+    {% assign sorted_speakers = site.data['2026'].speakers | sort:'name' %}          
+    {% for speaker in sorted_speakers %}
+
+    {% if speaker.image %} 
+        {% capture image_src %}{{ '/assets/2026/images/speakers/' | append: speaker.image }}{% endcapture%}
+    {% else %}
+        {% assign image_src = '/assets/default_avatar.svg' %}
+    {% endif %}
+
+    {% include 2026/speaker_card.html name=speaker.name title=speaker.title image_src=image_src type=speaker.type %}
+    {% endfor %}
+</div>

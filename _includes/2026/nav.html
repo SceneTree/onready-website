@@ -1,0 +1,21 @@
+<nav class="uppercase font-bold mx-auto sticky top-0 bg-beige z-10">
+
+    <input id='menu' class="hidden" type='checkbox' />
+    
+    <label class="bg-black text-beige block md:hidden flex gap-2" for='menu' tabindex="0">
+        <svg class="menu-arrow w-6 h-6 stroke-beige" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 7L12 17L2 7" stroke-width="3"/>
+        </svg>
+        <span>Menu</span>
+    </label>
+    
+    <div class="menu-list flex flex-col md:flex-row mx-auto max-w-screen-xl w-full">
+        <a href="#location">Location</a>
+        <a href="/2026/schedule">Schedule</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#speakers">{% if page.call-for-submissions %}Call for speakers{% else %}Speakers{% endif %}</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:godotcon@godotengine.org">Contact</a>
+    </div>
+</nav>

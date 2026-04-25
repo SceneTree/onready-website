@@ -1,0 +1,24 @@
+general:
+  - question: Who is this conference intended for?
+    answer: The goal of GodotCon is to provide an opportunity for community members to meet in person, exchange knowledge, form business contacts, and to introduce new people to the Godot project. Therefore it targets no particular skill level nor occupation over another, ideally becoming a melting pot of various user backgrounds. So if you are in any way interested in the Godot Engine, this is the right conference for you!
+  - question: Can my company become a sponsor?
+    answer: Yes! If you are interested in sponsoring the event you should write to <a href="mailto:godotcon@godotengine.org">godotcon@godotengine.org</a>. We have different tiers of sponsorship available, so you can choose the one that fits your company best.
+  - question: Can I showcase my game? Or submit a talk/workshop proposal
+    answer: Fill out <a href="https://talks.godotengine.org/godotcon-us-2026/submit/6K7JQ7/info/">this form</a>, we would love to hear about your projects and ideas! We cannot accept every submission, but we will email you about our decision either way. This means that while we do set aside tickets for our speakers and exhibitors, you should purchase one if you plan to attend either way.
+  - question: Will the conference be livestreamed?
+    answer: No. Talks will be recorded and uploaded to the Godot Engine YouTube channel after the conference, but there will be no live streams during the event.
+  - question: Is the first day only for workshops?
+    answer: Yes. The first day of the conference, May 5th, will be dedicated to workshops. You can purchase a ticket that includes access to the workshops, or just attend the conference on the 6th and 7th. Depending on the demand we might make changes to the schedule and the venue.
+  - question: Are you going to be hosting a GodotCon in Europe in 2026?
+    answer: Yes. We are planning to host a GodotCon in Europe by the end of 2026, but we are still in the early planning stages. We will announce more information as soon as we have it.
+tickets:
+  - question: The shop says you are sold out
+    answer: If you haven’t managed to secure a ticket, you can add yourself to the <strong>waiting list</strong>, to have a chance to claim a ticket reserved for you whenever any free up.
+  - question: What types of tickets are there?
+    answer: In addition to the <strong>Standard Ticket ($99)</strong> which grants you access to the 2-day conference on May 6th-May 7th. A <strong>Reduced Ticket ($59)</strong> for students or disability pass holders, and a <strong>Standard Ticket + Half-day Workshop Ticket ($198)</strong> which in addition to access to the 2-day conference on May 6th-May 7th, you can also attend a half-day of workshops that will be offered on the morning or afternoon the day before the conference (Monday 5th). Read more in the <a href="https://tickets.godotengine.org/foundation/godotcon-us-2026/">ticket shop</a>.
+  - question: Can I upgrade my ticket after purchase?
+    answer: Yes! Send us an email to <a href="mailto:godotcon@godotengine.org">godotcon@godotengine.org</a> with your name and wish. Make sure to use the same mail address you bought the tickets with, so we can verify your identity!
+  - question: What is your cancellation policy?
+    answer: You can <strong>fully refund your ticket until one month before the conference</strong>, so until the 5th of April. Afterwards you can still cancel your ticket and free it up for the next person on the waitlist, but will not receive a refund.
+  - question: Do I need to use my legal name? What will be shown on the badges?
+    answer: Yes. You will need a government issued ID to get into the venue, so the name on your ticket should match the name on your ID. For the badges themselves, you will be able to display a nickname or company name if you prefer.

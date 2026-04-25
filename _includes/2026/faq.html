@@ -1,0 +1,13 @@
+{% for entry in include.qa %}
+<details class="border-b-2 pt-4 pb-4 cursor-pointer">
+    <summary class="text-lg font-bold flex items-center gap-2">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 7L12 17L2 7" stroke="black" stroke-width="3"/>
+        </svg>
+        <span class="flex-1">
+            {{ entry.question }}
+        </span>
+    </summary>
+    <div><p class="max-w-[80ch] pt-2">{{ entry.answer }}</p></div>
+</details>
+{% endfor %}
