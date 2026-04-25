@@ -1129,7 +1129,13 @@ html {
 }
 
 body {
-	background-color: var(--color-beige);
+	background-image: url(../images/2026/comic-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #f7f7f7;
 	font-family: var(--font-sans)
 }
 
@@ -1183,7 +1189,17 @@ header {
 }
 
 header>img {
-	height: 100vh;
+	margin: 50% 0px;
+    width: 100%;
+    height: auto;
+}
+
+@media (width>=48rem) {
+	header>img {
+		margin: 0;
+		height: 100vh;
+		width: auto;
+	}
 }
 
 nav {
@@ -1264,13 +1280,15 @@ nav input[type=checkbox]:not(:checked)~label .menu-arrow {
     box-shadow: 2px 2px 1px 1px black;
 }
 
-.building-block-222 {
-	height: 222px;
-}
+@media (width>=48rem) {
+	.building-block-222 {
+		height: 222px;
+	}
 
-.half-width {
-	display: inline-block;
-	width: 49%;
+	.half-width {
+		display: inline-block;
+		width: 49%;
+	}
 }
 
 .top {
@@ -1281,6 +1299,11 @@ nav input[type=checkbox]:not(:checked)~label .menu-arrow {
 .bottom {
 	vertical-align: bottom;
 	margin-top: 0px;
+}
+
+.image-break {
+	margin: auto;
+	max-height: 200px;
 }
 
 details>summary {
