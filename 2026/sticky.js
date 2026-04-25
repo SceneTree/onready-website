@@ -11,6 +11,11 @@ const starImages = [
     "star_07.png"
 ];
 let lastScrollY = 0;
+const disappearAnimation = stickyHeader.animate(
+        [{opacity: 1}, {opacity: 0}],
+        {duration: 1000, iterations: 1, fill: "forwards" },
+    );
+disappearAnimation.pause();
 
 function getScrollTop() {
     if (typeof window.pageYOffset !== "undefined" ) {
@@ -57,9 +62,31 @@ function getViewportHeight() {
     return 0;
 }
 
+function getViewportWidth() {
+    // Prefer window.innerWidth for modern browsers
+    if (typeof window.innerWidth === 'number') {
+        return window.innerWidth;
+    }
+    // For older IE in standards mode
+    else if (document.documentElement && document.documentElement.clientWidth) {
+        return document.documentElement.clientWidth;
+    }
+    // For older IE in quirks mode
+    else if (document.body && document.body.clientWidth) {
+        return document.body.clientWidth;
+    }
+    // Fallback
+    return 0;
+}
+
 window.addEventListener('scroll', function () {
     if (window.scrollY < lastScrollY) {
         lastScrollY = window.scrollY;
+    }
+
+    if (getViewportWidth() < 800) {
+        disappearAnimation.currentTime = 0;
+        disappearAnimation.play();
     }
 
     if (window.scrollY - lastScrollY > 80) {

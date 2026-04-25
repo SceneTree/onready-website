@@ -8,9 +8,11 @@ general:
   - question: Will the conference be livestreamed?
     answer: No. Talks will be recorded and uploaded to the Godot Engine YouTube channel after the conference, but there will be no live streams during the event.
   - question: Is the first day only for workshops?
-    answer: Yes. The first day of the conference, May 5th, will be dedicated to workshops. You can purchase a ticket that includes access to the workshops, or just attend the conference on the 6th and 7th. Depending on the demand we might make changes to the schedule and the venue.
-  - question: Are you going to be hosting a GodotCon in Europe in 2026?
-    answer: Yes. We are planning to host a GodotCon in Europe by the end of 2026, but we are still in the early planning stages. We will announce more information as soon as we have it.
+    answer: Yes. The first day of the conference, Monday July 20th, will be dedicated to workshops. You can purchase a ticket that includes access to the workshops, or just attend the conference on Tuesday the 21st and Wednesday the 22nd. Depending on the demand we might make changes to the schedule and the venue.
+  - question: Is there any food or drink included?
+    answer: Yes, there is a light breakfast and lunch included. Water, coffee, and non-alcoholic drinks will be available throughout the day.
+  - question: What is the next European event?
+    answer: The next European event will be <a href="https://godotfest.com/">GodotFest</a> in Munich on November 11th and 12th.  
 tickets:
   - question: The shop says you are sold out
     answer: If you haven’t managed to secure a ticket, you can add yourself to the <strong>waiting list</strong>, to have a chance to claim a ticket reserved for you whenever any free up.
