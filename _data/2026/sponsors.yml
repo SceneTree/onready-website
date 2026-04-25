@@ -1,19 +1,19 @@
 platinum:
   - name: Microsoft
-    logo: /images/2026/sponsors/Microsoft.svg
+    logo: ../images/2026/sponsors/Microsoft.svg
     link: https://www.microsoftnewengland.com/
 gold:
   - name: W4 Games
-    logo: /images/2026/sponsors/w4games.png
+    logo: ../images/2026/sponsors/w4games.png
     link: https://w4games.com/
   - name: Xogot
-    logo: /images/2026/sponsors/Xogot-axolotl-icon.png
+    logo: ../images/2026/sponsors/Xogot-axolotl-icon.png
     link: https://xogot.com/
 silver:
   - name: BinarySolo
-    logo: /images/2026/sponsors/BinarySolo_Logo_onwhite.jpg
+    logo: ../images/2026/sponsors/BinarySolo_Logo_onwhite.jpg
     link: https://www.binarysolo.com
 bronze:
   - name: Disla Media
-    logo: /images/2026/sponsors/DM_Icon.png
+    logo: ../images/2026/sponsors/DM_Icon.png
     link: https://dislamedia.com/

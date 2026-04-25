@@ -67,7 +67,7 @@ window.addEventListener('scroll', function () {
             newDiv.classList.add("star-path");
 
             const starImg = document.createElement("img");
-            starImg.src = "/images/2026/" + starImages[Math.floor(Math.random() * starImages.length)]
+            starImg.src = "../images/2026/" + starImages[Math.floor(Math.random() * starImages.length)]
             newDiv.appendChild(starImg);
             starHolder.appendChild(newDiv);
 
