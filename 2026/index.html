@@ -6,6 +6,7 @@ country: USA
 dates: July 20-22
 discord-invite: "https://discord.gg/h3UJw4jHfT"
 ticket_shop_link: "https://tickets.godotengine.org/foundation/godotcon-us-2026/"
+on-sale: false
 sold-out: false
 call-for-submissions: true
 location: 
@@ -96,7 +97,7 @@ location:
               <p class="max-w-[70ch] leading-[160%]">{{entry.content}}</p>
             </div>
           {% endfor %}
-          <a class="btn" href="https://talks.godotengine.org/godotcon-us-2026/submit">Submit now!</a>
+          <a class="btn" href="https://talks.godotengine.org/godotcon-boston-2026/cfp">Submit now!</a>
           {% else %}
           <!-- Speakers list -->
           {% include 2026/speakers_list.html %}
@@ -113,16 +114,23 @@ location:
           <h2 class="text-2xl uppercase font-bold mb-4">Buy tickets</h2>
           <div class="flex flex-col md:flex-row gap-8">
             <div class="flex-1">
-              <p class="mb-4 max-w-[70ch] leading-[160%]">
-                {% if page.sold-out == false %}
-                  Tickets now on sale. Grab one now before the conference is full!
-                {% else %}
+              {% if page.on-sale == false %}
+                <p class="mb-4 max-w-[70ch] leading-[160%]">
+                Coming soon! We are still finalizing ticketing for the event.
+                </p>
+              {% elsif page.sold-out == false %}
+                <p class="mb-4 max-w-[70ch] leading-[160%]">
+                Tickets now on sale. Grab one now before the conference is full!
+                </p>
+                <a class="btn" href="{{ page.ticket_shop_link }}">Ticket Shop</a>
+              {% else %}
+                <p class="mb-4 max-w-[70ch] leading-[160%]">
                   We have sold out so fast! Thank you to everyone who grabbed a ticket.
                   If you did not get lucky this time, don't give up quite yet.
                   Tickets will free up over time, so we enabled a waiting list in the ticket shop for you.
-                {% endif %}
-              </p>
-              <a class="btn" href="{{ page.ticket_shop_link }}">Ticket Shop</a>
+                </p>
+                <a class="btn" href="{{ page.ticket_shop_link }}">Ticket Shop</a>
+              {% endif %}
             </div>
           </div>
         </div>

@@ -6,6 +6,9 @@ gold:
   - name: W4 Games
     logo: ../images/2026/sponsors/w4games.png
     link: https://w4games.com/
+  - name: Mike Klubnika
+    logo: ../images/2026/sponsors/Mike-Klubnika-logo-RATCHET.png
+    link: https://store.steampowered.com/dev/mikeklubnika
   - name: Xogot
     logo: ../images/2026/sponsors/Xogot-axolotl-icon.png
     link: https://xogot.com/
@@ -14,6 +17,3 @@ silver:
     logo: ../images/2026/sponsors/BinarySolo_Logo_onwhite.jpg
     link: https://www.binarysolo.com
 bronze:
-  - name: Disla Media
-    logo: ../images/2026/sponsors/DM_Icon.png
-    link: https://dislamedia.com/

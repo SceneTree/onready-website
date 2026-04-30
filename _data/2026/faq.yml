@@ -14,6 +14,8 @@ general:
   - question: What is the next European event?
     answer: The next European event will be <a href="https://godotfest.com/">GodotFest</a> in Munich on November 11th and 12th.  
 tickets:
+  - question: I submitted a proposal. Should I buy a ticket?
+    answer: Yes! Please grab a ticket and reserve your space now. Speakers will be finalized in June and we can process refunds if necessary, but we can't increase venue capacity.
   - question: The shop says you are sold out
     answer: If you haven’t managed to secure a ticket, you can add yourself to the <strong>waiting list</strong>, to have a chance to claim a ticket reserved for you whenever any free up.
   - question: What types of tickets are there?
@@ -23,4 +25,4 @@ tickets:
   - question: What is your cancellation policy?
     answer: You can <strong>fully refund your ticket until one month before the conference</strong>, so until the 5th of April. Afterwards you can still cancel your ticket and free it up for the next person on the waitlist, but will not receive a refund.
   - question: Do I need to use my legal name? What will be shown on the badges?
-    answer: Yes. You will need a government issued ID to get into the venue, so the name on your ticket should match the name on your ID. For the badges themselves, you will be able to display a nickname or company name if you prefer.
+    answer: Yes. You will need a government issued ID to get into the venue (as per THEIR rules), so the name on your ticket should match the name on your ID. For the badges themselves, you will be able to display a nickname or company name if you prefer.

@@ -1194,6 +1194,15 @@ header>img {
     height: auto;
 }
 
+header>div {
+	position: absolute;
+	right: 50px;
+    bottom: 100px;
+    font-size: var(--text-5xl);
+    color: #ffffcd;
+    text-shadow: 2px 2px 8px black;
+}
+
 @media (width>=48rem) {
 	header>img {
 		margin: 0;
@@ -1373,7 +1382,7 @@ details[open] svg {
 }
 
 footer {
-	min-height: 280px;
+	min-height: 200px;
 }
 
 .speaker-type.community-talk {
